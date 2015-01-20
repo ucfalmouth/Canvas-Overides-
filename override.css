@@ -1,0 +1,43 @@
+/* Replace the gray background with something that matches your colors.  You can use .pngs with alpha transparency. If you don't use an image, you need to remove ours*/
+#header {
+  /* background: url("noisy_blue.png?v1") repeat-x scroll center transparent; */
+  background: url("https://googledrive.com/host/0B-rfdoynt8B-b2ZqN0YxeWpvY1E/emu_background") repeat-x scroll center transparent;
+}
+
+
+/*replace the canvas logo with your logo*/
+#header-logo, #header.no-user #header-logo {
+  background: url("https://googledrive.com/host/0B-rfdoynt8B-anJCRm9qUGdfRjg/emu_logo.png") no-repeat scroll 0 0 transparent;
+  bottom: 0px;
+  height: 70px;
+  left: 15px;
+  width: 263px;
+}
+
+
+/*if your logo is bigger, you can make room like this*/
+#menu { margin-left: 246px; }
+
+/*change the identity bar (the area that says â€œUser Inbox Settings Logout Help)*/
+#identity {
+  background-image: none;
+  background-color: #5A8EB4;
+}
+
+/*change the color of the circle around the number of unread inbox messages*/
+#identity .inbox a .unread-messages-count { background-color: #C9742E; }
+
+/*change the color of the menu items (courses & groups etc.). If the text looks fuzzy, remove the text shadow.*/
+.menu-item .menu-item-title, .menu-item .menu-item-no-drop {
+  color: #FAFBF4;
+  text-shadow: none;
+}
+
+#header.no-user {
+	background-position: 0 0px;
+	min-height: 70px;
+}
+
+#header-logo, #header.no-user #header-logo {
+	top: 0px;
+}
